@@ -109,7 +109,7 @@ class loginAgain extends Component{
 
   render() {
     return (
-      <ScrollView style={styles.profileListContainer}>
+      <ScrollView showsVerticalScrollIndicator={false} style={styles.profileListContainer}>
         <Form ref="form">
           <View style={styles.inputRow}>
             <TextInput type="TextInput" name="password" ref='SecondInput' placeholderTextColor="#777" style={styles.input} placeholder="密码" password={true} secureTextEntry={true}/>

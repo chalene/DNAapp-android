@@ -53,7 +53,7 @@ class Bar extends Component{
     super(props);
     this.onFacePress = this._FaceRequire.bind(this);
     this.state = {
-      selectedTab: this.props.isFirstTime==="1"? '我的帐户':'华大商城',
+      selectedTab: this.props.isFirstTime==="1"? '我的帐户':'查看DNA档案',
       isFirstTime: this.props.isFirstTime==="1"? true: false,
     };
   }
@@ -158,12 +158,12 @@ class Bar extends Component{
          tabPress=TAB_PRESS_1; 
          navigatorview=<Profile uid={this.props.uid} navigator={this.props.navigator}/>;
          break;  
-     case '我的帐户':  
-       tabNomal=TAB_NORMAL_4;  
-       tabPress=TAB_PRESS_4;
-       navigatorview=<User uid={this.props.uid} isFirstTime={this.state.isFirstTime} callbackLogout={this.props.callbackLogout} navigator={this.props.navigator}/>;
-       break;  
-       default:  
+       case '我的帐户':  
+         tabNomal=TAB_NORMAL_4;  
+         tabPress=TAB_PRESS_4;
+         navigatorview=<User uid={this.props.uid} isFirstTime={this.state.isFirstTime} callbackLogout={this.props.callbackLogout} navigator={this.props.navigator}/>;
+         break;  
+         default:  break; 
   
      }  
      return(  

@@ -139,24 +139,10 @@ class Login extends Component{
             <TextInput type="TextInput" name="username" returnKeyType = {"next"}  placeholderTextColor="#777" style={styles.input} placeholder="用户名"/>
             <Icon name="user" style={styles.icon} size={20} />
           </View>
-          <View style={styles.inputRow}>
-            <TextInput type="TextInput" name="password" ref='SecondInput' placeholderTextColor="#777" style={styles.input} placeholder="密码" password={true} secureTextEntry={true}/>
-            <Icon name="lock" style={styles.icon} size={20} />
-          </View>
         </Form>
         <View style={styles.inputRow}>
           <TouchableHighlight underlayColor="#48aeb4" style={styles.btn_pm} onPress={() => this._login()}>
             <Text style={{color:'#fff'}}>登录</Text>
-          </TouchableHighlight>
-        </View>
-        <View style={styles.inputRow}>
-          <View style={styles.btn_dec}></View>
-          <Text style={styles.btn_or}>或</Text>
-          <View style={styles.btn_dec}></View>
-        </View>
-        <View style={styles.inputRow}>
-          <TouchableHighlight underlayColor="#fff" style={styles.btn} onPress={() => this._launchSignup()}>
-            <Text style={{color:'#777'}}>注册</Text>
           </TouchableHighlight>
         </View>
       </View>
@@ -164,7 +150,22 @@ class Login extends Component{
   }
 
 }
-
+// Removed Password in login.
+          // <View style={styles.inputRow}>
+          //   <TextInput type="TextInput" name="password" ref='SecondInput' placeholderTextColor="#777" style={styles.input} placeholder="密码" password={true} secureTextEntry={true}/>
+          //   <Icon name="lock" style={styles.icon} size={20} />
+          // </View>
+// Removed 注册 button          
+        // <View style={styles.inputRow}>
+        //   <View style={styles.btn_dec}></View>
+        //   <Text style={styles.btn_or}>或</Text>
+        //   <View style={styles.btn_dec}></View>
+        // </View>
+        // <View style={styles.inputRow}>
+        //   <TouchableHighlight underlayColor="#fff" style={styles.btn} onPress={() => this._launchSignup()}>
+        //     <Text style={{color:'#777'}}>注册</Text>
+        //   </TouchableHighlight>
+        // </View>
 
 const styles = StyleSheet.create({
   icon:{
