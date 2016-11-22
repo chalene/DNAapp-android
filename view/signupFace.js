@@ -157,7 +157,7 @@ class FaceInitial extends Component{
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
-      quality:0.2,
+      quality:1,
       maxWidth:322,
       storageOptions: { 
         skipBackup: true, 
@@ -197,7 +197,7 @@ class FaceInitial extends Component{
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
-      quality:0.2,
+      quality:1,
       maxWidth:322,
       storageOptions: { 
         skipBackup: true, 
@@ -236,7 +236,7 @@ class FaceInitial extends Component{
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
-      quality:0.2,
+      quality:1,
       maxWidth:322,
       storageOptions: { 
         skipBackup: true, 
@@ -275,7 +275,7 @@ class FaceInitial extends Component{
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
-      quality:0.2,
+      quality:1,
       maxWidth:322,
       storageOptions: { 
         skipBackup: true, 
