@@ -942,20 +942,6 @@ export default class extends Component{
           </View>
         </View>
         {this._renderFirstTimeMsg()}
-        <TouchableHighlight  underlayColor="#f1f1f1" style={styles.userMenuContainer} onPress={() => this._onPursePress()}>
-          <View style={styles.userMenu}>
-            <Icon style={styles.itemNavIcon} name="shopping-bag" size={18}></Icon>
-            <Text>我的钱包</Text>
-            <Icon style={styles.itemNavMenu} name="angle-right" size={20}></Icon>
-          </View>
-        </TouchableHighlight>
-        <TouchableHighlight  underlayColor="#f1f1f1" style={styles.userMenuContainer} onPress={() => this._onIncomePress()}>
-          <View style={styles.userMenu}>
-            <Icon style={styles.itemNavIcon} name="list-alt" size={18}></Icon>
-            <Text>支出明细</Text>
-            <Icon style={styles.itemNavMenu} name="angle-right" size={20}></Icon>
-          </View>
-        </TouchableHighlight>
         <TouchableHighlight underlayColor="#f1f1f1" style={styles.userMenuContainer} onPress={() => this._onHelpPress()}>
           <View style={styles.userMenu}>
             <Icon style={styles.itemNavIcon} name="question-circle" size={18}></Icon>
@@ -966,7 +952,7 @@ export default class extends Component{
         <TouchableHighlight underlayColor="#f1f1f1" style={styles.userMenuContainer} onPress={() => this._onAboutPress()}>
           <View style={styles.userMenu}>
             <Icon style={styles.itemNavIcon} name="info-circle" size={18}></Icon>
-            <Text>关于微代理</Text>
+            <Text>关于DNA档案</Text>
             <Icon style={styles.itemNavMenu} name="angle-right" size={20}></Icon>
           </View>
         </TouchableHighlight>

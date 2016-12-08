@@ -272,6 +272,7 @@ export default class extends Component{
             <Text style={{color:'#fff',fontSize: 22,}}>密码查看</Text>
           </TouchableHighlight>
         </View>
+        <Image source={require('./img/CNGB.png')} style={{width: Util.size.width-40, resizeMode: Image.resizeMode.contain,marginTop:-105}}></Image>
       </ScrollView>
     );
   }
@@ -306,10 +307,10 @@ export default class extends Component{
 
 const styles = StyleSheet.create({
   big_button:{
-    marginTop:0.2*Util.size.width,
-    marginBottom:13,
-    width:0.5*Util.size.width,
-    height:0.4*Util.size.width,//40,
+    marginTop:0.1*Util.size.width,
+    //marginBottom:13,
+    width:0.45*Util.size.width,
+    height:0.35*Util.size.width,//40,
     borderRadius:2,
     backgroundColor:'#1E868C',
     justifyContent:'center',
