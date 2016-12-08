@@ -272,7 +272,7 @@ export default class extends Component{
             <Text style={{color:'#fff',fontSize: 22,}}>密码查看</Text>
           </TouchableHighlight>
         </View>
-        <Image source={require('./img/CNGB.png')} style={{width: Util.size.width-40, resizeMode: Image.resizeMode.contain,marginTop:-105}}></Image>
+        <Image source={require('./img/CNGB.png')} style={{width: Util.size.width*0.8+40, resizeMode: Image.resizeMode.contain,marginTop:-110}}></Image>
       </ScrollView>
     );
   }
