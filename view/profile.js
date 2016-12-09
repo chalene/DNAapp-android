@@ -262,17 +262,20 @@ export default class extends Component{
     console.log("DNA档案列表页面")
     return(
       <ScrollView showsVerticalScrollIndicator={false} style={styles.userContainer}>
-        <View style={{alignItems:"center",width:Util.size.width}}>
-          <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this.onFacePress()}>
-            <Text style={{color:'#fff',fontSize: 22,}}>人脸识别</Text>
-          </TouchableHighlight>
+        <Image source={require('./img/aerial.jpg')} style={styles.bgImageWrapper}/>
+        <View style={{flex: 1, flexDirection: 'row',marginTop:80}}>
+          <View style={{marginLeft:50,width:200}}>
+            <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this.onFacePress()}>
+              <Text style={{color:'#fff',fontSize: 22,}}>人脸识别</Text>
+            </TouchableHighlight>
+          </View>
+          <View style={{width:200}}>
+            <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this._onPasswordPress()}>
+              <Text style={{color:'#fff',fontSize: 22,}}>密码查看</Text>
+            </TouchableHighlight>
+          </View>
         </View>
-        <View style={{alignItems:"center",width:Util.size.width}}>
-          <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this._onPasswordPress()}>
-            <Text style={{color:'#fff',fontSize: 22,}}>密码查看</Text>
-          </TouchableHighlight>
-        </View>
-        <Image source={require('./img/CNGB.png')} style={{width: Util.size.width-40, resizeMode: Image.resizeMode.contain,marginTop:-105}}></Image>
+        <Image source={require('./img/CNGB.png')} style={{width: Util.size.width-40, resizeMode: Image.resizeMode.contain,marginTop:1050}}></Image>
       </ScrollView>
     );
   }
@@ -306,11 +309,18 @@ export default class extends Component{
 // }
 
 const styles = StyleSheet.create({
+  bgImageWrapper: {
+    flex:1,
+    position: 'absolute',
+    top: 0, bottom: 0, left: 0, right: 0,
+    height: Util.size.height,
+    width: Util.size.width
+  },
   big_button:{
     marginTop:0.1*Util.size.width,
     //marginBottom:13,
-    width:0.45*Util.size.width,
-    height:0.35*Util.size.width,//40,
+    width:0.3*Util.size.width,
+    height:0.18*Util.size.width,//40,
     borderRadius:2,
     backgroundColor:'#1E868C',
     justifyContent:'center',
